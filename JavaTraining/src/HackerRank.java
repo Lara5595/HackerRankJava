@@ -67,5 +67,5 @@ public class HackerRank {
     
 
 
-    }
+    } // end of main
 } // End of hacker rank

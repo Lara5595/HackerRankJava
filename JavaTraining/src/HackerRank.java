@@ -30,6 +30,11 @@ public class HackerRank {
     // The first column contains the String and is left justified using exactly  characters.
     // The second column contains the integer, expressed in exactly  digits; if the original input has less than three digits, you must pad your output's leading digits with zeroes.
 
+    // question 6
+    // Multiplication table for 2
+
+
+
     public static void main(String[] args) {
         
         // question 1 answer
@@ -91,20 +96,32 @@ public class HackerRank {
             // System.out.println("================================");
 
             //  This is a better example for #5
-            Scanner scanf = new Scanner(System.in);
-            System.out.println("Enter something");
-            String hi = scanf.next();
-            System.out.println("Enter a number");
-            int numberf = scanf.nextInt();
+            // Scanner scanf = new Scanner(System.in);
+            // System.out.println("Enter something");
+            // String hi = scanf.nextLine();
+            // System.out.println("Enter a number");
+            // int numberf = scanf.nextInt();
 
-            System.out.println("================================");
+            // System.out.println("================================");
 
-            System.out.printf("%-15s%03d%n", hi, numberf);
+            // System.out.printf("%-15s%03d%n", hi, numberf);
 
-            System.out.println("================================");
+            // System.out.println("================================");
 
 
 
+            // question 6 answer
+            Scanner number = new Scanner(System.in);
+            System.out.println("Enter a number to multiply");
+            int numberWeAreMultiplying = number.nextInt();
+            System.out.printf("You enter %d%n", numberWeAreMultiplying);
+
+
+            for (int N = 1; N <=10; N++){
+                int result = numberWeAreMultiplying * N;
+                System.out.printf("%d x %d = %d%n", numberWeAreMultiplying, N, result);
+            }
+            
 
 
 

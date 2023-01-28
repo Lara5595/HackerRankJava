@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import javax.swing.SortingFocusTraversalPolicy;
+
 public class HackerRank {
     //  Question 1 System.out.println("Hello World")
 
@@ -21,6 +23,12 @@ public class HackerRank {
     // To make the problem easier, a portion of the code is already provided in the editor.
 
     // Note: If you use the nextLine() method immediately following the nextInt() method, recall that nextInt() reads integer tokens; because of this, the last newline character for that line of integer input is still queued in the input buffer and the next nextLine() will be reading the remainder of the integer line (which is empty).
+
+
+    // question 5 using souf
+    // In each line of output there should be two columns:
+    // The first column contains the String and is left justified using exactly  characters.
+    // The second column contains the integer, expressed in exactly  digits; if the original input has less than three digits, you must pad your output's leading digits with zeroes.
 
     public static void main(String[] args) {
         
@@ -52,19 +60,52 @@ public class HackerRank {
         // }
         
             // question 4 answer
-            Scanner scan = new Scanner(System.in);
+            // Scanner scan = new Scanner(System.in);
 
-            int i = scan.nextInt();
-            double d = scan.nextDouble();
-            //  This makes it so that you get the full line outputted
-            scan.nextLine();
-            String s = scan.nextLine();
+            // int i = scan.nextInt();
+            // double d = scan.nextDouble();
+            // //  This makes it so that you get the full line outputted
+            // scan.nextLine();
+            // String s = scan.nextLine();
     
-            // Write your code here.
-            System.out.println("String: " + s);
-            System.out.println("Double: " + d);
-            System.out.println("Int: " + i);
+            // // Write your code here.
+            // System.out.println("String: " + s);
+            // System.out.println("Double: " + d);
+            // System.out.println("Int: " + i);
     
+
+            
+            // question 5 answer
+            // Scanner sc = new Scanner(System.in);
+            // System.out.println("================================");
+
+            // for(int i=0;i<3;i++){
+            //     String s1=sc.next();
+            //     int x=sc.nextInt();
+            //     //Complete this line
+            //      System.out.printf("%-15s%03d%n", s1,x);
+
+                
+            // }
+
+            // System.out.println("================================");
+
+            //  This is a better example for #5
+            Scanner scanf = new Scanner(System.in);
+            System.out.println("Enter something");
+            String hi = scanf.next();
+            System.out.println("Enter a number");
+            int numberf = scanf.nextInt();
+
+            System.out.println("================================");
+
+            System.out.printf("%-15s%03d%n", hi, numberf);
+
+            System.out.println("================================");
+
+
+
+
 
 
     } // end of main

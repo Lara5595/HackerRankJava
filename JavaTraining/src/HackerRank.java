@@ -111,6 +111,15 @@ public class HackerRank {
 
 
             // question 6 answer
+
+            // int N = Integer.parseInt(bufferedReader.readLine().trim());
+
+            // for(int i = 1; i<=10; i++){
+            // System.out.printf("%d x %d = %d%n", N, i, N*i);
+            // }
+
+            // better answer
+
             Scanner number = new Scanner(System.in);
             System.out.println("Enter a number to multiply");
             int numberWeAreMultiplying = number.nextInt();
